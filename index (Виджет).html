@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Связаться с нами — Хаме</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://bpmsoft-oc-widget1.cloudbpm.ru/3.2/widget.css">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #FDF5EE;
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-section {
+      padding: 80px 24px;
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #F26522;
+      margin-bottom: 20px;
+    }
+
+    .contact-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 900;
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.1;
+      color: #1A1008;
+      margin-bottom: 0;
+    }
+
+    .contact-title em {
+      font-style: normal;
+      color: #F26522;
+    }
+
+    .contact-sub {
+      font-size: 15px;
+      color: #8B5E30;
+      max-width: 440px;
+      margin: 20px auto 48px;
+      line-height: 1.7;
+    }
+
+    .chat-wrapper {
+      background: #FFFFFF;
+      border-radius: 24px;
+      box-shadow: 0 24px 80px rgba(242,101,34,0.12), 0 4px 16px rgba(0,0,0,0.06);
+      padding: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .chat-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #D4541A, #FF8040);
+    }
+
+    .chat-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #F26522;
+      text-align: left;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .chat-label .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22C55E;
+      animation: pulse 2s infinite;
+    }
+
+    #bpmsoftocc-chat {
+      min-height: 400px;
+    }
+
+    /* Widget overrides */
+    #bpmsoftoccchat-container .bpmsoftoccchat-conversation-body-profile {
+      height: 120px; position: absolute; bottom: 60%; background: #F26522;
+    }
+    #bpmsoftoccchat-container .bpmsoftoccchat-conversation-body-parts { z-index: 0; }
+    #bpmsoftoccchat-container .bpmsoftoccchat-team-profile-compact-avatar .bpmsoftoccchat-avatar img {
+      position: fixed; width: auto; bottom: 67%; height: 15px;
+    }
+    #bpmsoftoccchat-container .bpmsoftoccchat-team-profile-compact-contents { position: fixed; bottom: 62%; }
+    #bpmsoftoccchat-container .bpmsoftoccchat-team-profile-compact { position: fixed; bottom: 62%; }
+    #bpmsoftoccchat-container .bpmsoftoccchat-team-profile-compact-team-name { position: fixed; bottom: 62%; }
+    #bpmsoftoccchat-container .bpmsoftoccchat-messenger { height: 600px; }
+    .bpmsoftoccchat-bot-button { background-color: #F26522 !important; }
+    .bpmsoftoccchat-bot-button:hover { background-color: #D4541A !important; }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0.4); }
+      50%       { box-shadow: 0 0 0 6px rgba(34,197,94,0); }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="contact-section">
+    <p class="section-label">Связь с нами</p>
+    <h2 class="contact-title">Есть вопросы?<br><em>Мы на связи</em></h2>
+    <p class="contact-sub">Наши операторы готовы помочь вам с любым вопросом — о продукции, доставке или сотрудничестве. Напишите прямо сейчас!</p>
+
+  </section>
+
+<link rel="stylesheet" href="https://bpmsoft-oc-widget1.cloudbpm.ru/3.2/widget.css">
+<div id="bpmsoftocc-chat"></div>
+<script> 
+    window.bpmsoftoccconfig = {};
+    window.bpmsoftoccconfig.channelId = '4afbd3c7-2d97-43b5-9ada-cd09a833b3cf';
+    window.bpmsoftoccconfig.connectorUrl = 'https://bpmsoft-oc-connector1.cloudbpm.ru';
+</script>
+<script src="https://bpmsoft-oc-widget1.cloudbpm.ru/3.2/widget.js" async></script>
+<script src="https://bpmsoft-oc-widget1.cloudbpm.ru/3.2/chunk-vendors.js" async></script>
+
+</body>
+</html>
